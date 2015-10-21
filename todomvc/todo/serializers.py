@@ -1,9 +1,9 @@
 from rest_framework import serializers
-from .models import ToDo
+from .models import Todo
 
 
-class ToDoSerializer(serializers.HyperlinkedModelSerializer):
+class TodoSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
-        model = ToDo
+        model = Todo
         fields = ('id', 'title', 'completed', 'order')
